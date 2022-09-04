@@ -1,0 +1,63 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 127, 80, 1);
+  width: 300px;
+  margin-top: 1em;
+}
+
+input {
+  background-color: rgba(103, 98, 106, .3);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color:gray;
+  font-size: 12px;
+  letter-spacing: .07rem;
+  padding: 15px;
+  margin: 10px 0px;
+  border:1px solid rgba(103, 98, 106, .3);
+} 
+input::placeholder {
+  color: lightgray;
+}
+input:invalid[focused="true"]{ 
+  border: 1px solid coral;
+}
+input:invalid[focused="true"] ~ span{
+  display: block;
+}
+
+label {
+  margin-bottom:10px;
+  font-size: 14px;
+  letter-spacing: .07rem;
+  color: gray;
+}
+
+span {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.18px;
+  color: aliceblue;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .formInput {
+   width: 60vw;
+   display: flex;
+   }  
+ }
+ 
+
+
+
+    
+  
+        
+          
+          
+        
+
+ 
